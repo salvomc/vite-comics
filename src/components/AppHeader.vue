@@ -41,5 +41,35 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../partials/variables' as *;
+@use '../partials/generals' as *;
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    width: 100%;
+
+    img {
+        width: 80px;
+    }
     
+    .col{
+        display: flex;
+        gap: 30px;
+        text-transform: uppercase;
+        list-style: none;
+        
+            li{
+                
+            a:hover {
+                color: $blue;
+                border-bottom: 1px solid $blue;
+                }
+        
+            }
+
+        }
+    }
+
 </style>
