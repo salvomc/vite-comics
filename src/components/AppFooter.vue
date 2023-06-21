@@ -122,6 +122,113 @@ export default {
 @use '../styles/partials/variables' as *;
 @use '../styles/generals' as *;
 
+.navbar-container{
+    height: 150px;
+    background-color:#0282F9;
+    
+    ul{ 
+        max-width: 1400px;
+        margin-left: 11.2rem;
+        display: flex;
+        align-items: center;
 
+        li{
+            width: calc(100% / 5 );
+            display: flex;
+            align-items: center;
+            
+            a{
+                padding-top: 3rem;
+                display: flex;
+                align-items: center;
+                
+                
+                    img{
+                    max-width: 100%;
+                    height: 50px;
+                    margin-right: 0.5rem;
+                    
+                    }
+                    span{
+                        font-weight: bold;
+                        font-size: 12px;
+                        color: white;
+                    }
+                
+            }
+        }       
+    }
+}
+
+footer {
+    background-image: url(/img/footer-bg.jpg);      
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #303030; 
+    div.dc-logo-footer {
+                background-image: url(/img/dc-logo-bg.png);
+                width: 88%;
+                padding-bottom: 30px;
+                margin-left: 22px;
+                background-position: right center;
+                background-repeat: no-repeat;
+                       }
+}
+
+div.link-list {
+    
+        margin-left: 10rem;
+        display: flex;
+    
+        ul li {
+            padding: 0.1rem;
+            margin-right: 0.7rem;
+            font-size: 0.6rem;
+            list-style: none;
+            color: grey;
+            
+            h5 {
+                margin: 1.5rem 0 0.5rem 0;
+                font-size: .9rem;
+                color: $white-color;
+            }
+        }
+}
+section.bottom-footer {
+                background-color: #303030;
+                height: 90px;
+                div.link-list-container {
+                                    height: 100%;
+                                    margin-left: 14rem;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    
+                                    &>a {
+                                        padding: 0.6rem;
+                                        border: 2px solid $main-blue-color;
+                                        font-size: 0.8rem;
+                                        font-weight: bold;
+                                        text-decoration: none;
+                                        color: $white-color;
+                                        }
+                                    div.link-social {
+                                                margin-right: 14rem;
+                                                display: flex;
+                                                align-items: center;
+                                                    
+                                                h4 {
+                                                    padding-right: 1rem;
+                                                    color: $main-blue-color;
+                                                    }
+                                                
+                                                img {
+                                                    width: 25px;
+                                                    margin: 0 0.4rem;
+                                                    }
+                                    }
+                }
+}
 
 </style>
