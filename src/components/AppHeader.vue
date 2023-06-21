@@ -25,7 +25,7 @@ export default {
     
     <div>
         <header>
-            <div class="container">
+            <div class="header-container">
                 <div class="row">
                     <img class="col" src="/img/dc-logo.png" alt="">
                     <ul class="col">
@@ -41,35 +41,41 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../partials/variables' as *;
-@use '../partials/generals' as *;
-.row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 0;
-    width: 100%;
+@use '../styles/partials/variables' as *;
+@use '../styles/generals' as *;
 
-    img {
-        width: 80px;
-    }
-    
-    .col{
-        display: flex;
-        gap: 30px;
-        text-transform: uppercase;
-        list-style: none;
-        
-            li{
-                
-            a:hover {
-                color: $blue;
-                border-bottom: 1px solid $blue;
-                }
-        
+.header-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    font-size: 12px;
+    .row{
+            width: 100%;
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            img{
+            width: 80px;
             }
+        
+            .col{
+                    gap: 30px;
+                    list-style: none;
+                    display: flex;
+                    text-transform: uppercase;
+            
+                    li{
+                    
+                        a:hover {
+                                    border-bottom: 1px solid $main-blue-color;
+                                    color: $main-blue-color;
+                                }
+            
+                    }
 
+                }
         }
-    }
+}
 
 </style>

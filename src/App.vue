@@ -19,15 +19,17 @@ export default {
 </script>
 
 <template>
+
   
-  <div>
     <AppHeader></AppHeader>
     <AppMain></AppMain>
     <AppFooter></AppFooter> 
-  </div>
   
+
 </template>
 
-<style scoped>
+<style lang="scss">
+@use './styles/partials/variables' as *;
+@use './styles/generals.scss' as *;
 
 </style>
