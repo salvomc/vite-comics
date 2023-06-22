@@ -129,6 +129,7 @@ export default {
     ul{ 
         max-width: 1400px;
         margin-left: 11.2rem;
+        margin-top: 0;
         display: flex;
         align-items: center;
 
